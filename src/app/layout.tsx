@@ -16,7 +16,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header
+          style={{
+            backgroundColor: "lightblue",
+            padding: "1em",
+          }}
+        >
+          <p>Header</p>
+        </header>
+        {/* content children */}
+        {children}
+        <footer
+          style={{
+            backgroundColor: "cyan",
+            padding: "1em",
+          }}
+        >
+          <p>Footer</p>
+        </footer>
+      </body>
     </html>
   );
 }
